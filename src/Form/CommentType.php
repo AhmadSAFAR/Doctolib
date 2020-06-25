@@ -8,6 +8,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use App\Entity\Doctor;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use App\Entity\Patient;
 
 class CommentType extends AbstractType
@@ -15,13 +16,8 @@ class CommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('comment')
-            ->add('doctor', EntityType::class, [
-                'class' => Doctor::class,
-                'choice_label'=>'comments'])
-            ->add('patient', EntityType::class, [
-                'class' => Patient::class,
-                'choice_label'=>'comments'])
+            ->add('comment', TextType::class, ['label' => 'Message'])
+   
         ;
     }
 
