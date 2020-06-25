@@ -1,0 +1,48 @@
+.pimg img{
+    width: 20leftpart0px;
+    height: 150px;
+    padding-left: 10px;
+ 
+}
+.commentaire{
+    height: 400px;
+   
+}
+
+.leftpart{
+    height: 100%;
+    width: 25%;
+    border-style: solid;
+    border-color: black;
+}
+
+.chat{
+    width: 50%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+}
+
+.rightpart{
+    margin-top: 200px;
+    width: 25%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+    padding-left: 5%;
+    background-color: grey;
+}
+
+.bigdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.middle{
+    padding-top: 150px;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    text-align: center;
+}
+

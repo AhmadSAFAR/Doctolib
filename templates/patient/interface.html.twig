@@ -1,8 +1,49 @@
 {% extends 'base.html.twig' %}
 {% block title %}Espace Patient{% endblock %}
 {% block body %}
-    <h3>{{ patient.firstname }} {{ patient.lastname }} </h3>
-    <h4>{{ patient.city }} {{ patient.zip }} {{ patient.adress }}</h4>
-    <h4> {{ patient.phoneNumber }} </h4>
-     <h4> {{ patient.description }} </h4>
+
+<div class="bigdiv">
+
+<div class="leftpart">
+        <div class="pimg">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="profil image" />
+        </div>
+        <div class="infopatient">
+            <h1>{{ patient.firstname }} {{ patient.lastname }} </h1>
+            <h4>{{ patient.phoneNumber }} </h4>
+            <h4>{{ patient.disease }} </h4>
+            <h1>Autres informations</h1>
+    <ul>
+        <li>Traitement X</li>
+        <li>Traitement Y</li>
+        <li>Traitement Z</li>
+        <li href>Ajouter un traitement essayé</li>
+    </ul>
+        </div>
+</div>
+
+
+
+
+<div class="chat">
+<p>{{ patient.description }}</p>
+<div class="middle">
+        <h3>Discussion</h3>
+        <h6>Ecris par:</h6>
+    </div>
+</div>
+
+
+<div class="rightpart">
+<h1>Suivi par:</h1>
+    <ul>
+        <li>Médecin X</li>
+        <li>Médecin Y</li>
+        <li>Médecin Z</li>
+        <li href>Ajouter un médecin</li>
+    </ul>
+</div>
+
+</div>
+
 {% endblock %}

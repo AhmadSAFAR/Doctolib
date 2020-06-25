@@ -1,6 +1,29 @@
 @import "~bootstrap/scss/bootstrap";
+@import "patient.scss";
 
-.logonavbar {
-    width: 50px;
-    height: 50px;
+$primary: #1599E3 ;
+$secondary: #eef2f6!important;
+
+.doctolib {
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    height: 150px;
+}
+
+.navbar {
+    background-color: #1599E3!important;
+    height: 100px;
+}
+
+footer {
+    padding-top: 20px;
+    background-color: #eef2f6!important;
+}
+
+
+.body {
+    background-color: white;
 }
