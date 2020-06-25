@@ -1,8 +1,60 @@
 {% extends 'base.html.twig' %}
 {% block title %}Espace Patient{% endblock %}
 {% block body %}
-    <h3>{{ patient.firstname }} {{ patient.lastname }} </h3>
-    <h4>{{ patient.city }} {{ patient.zip }} {{ patient.adress }}</h4>
-    <h4> {{ patient.phoneNumber }} </h4>
-     <h4> {{ patient.description }} </h4>
+<h1 class="titrepagepatient">Espace patient {{ patient.firstname }} {{ patient.lastname }}</h1>
+<div class="bigdiv">
+
+<div class="leftpart">
+        <div class="pimg">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="profil image" />
+        </div>
+        <hr>
+        <div class="infopatient">
+            <h6>{{ patient.firstname }} {{ patient.lastname }} </h6>
+            <h6>{{ patient.phoneNumber }} </h6>
+            <h6>{{ patient.disease }} </h6>
+            <h5>Informations:</h5>
+    <ul>
+        <li>Traiment XY pris en 2019</li>
+        <li>Allergique à l'amoxicilline</li>
+        <li>Atteint de la maladie de Lyme</li>
+        <li href>Ajouter un traitement essayé</li>
+    </ul>
+        </div>
+</div>
+
+<div class="chat">
+    <hr>
+    <p>{{ patient.email }}</p>
+<div class="description">
+    <h5>Discussion sur l'évolution de mon état de santé</h5>
+        <div>  
+    <table class="discussion">
+        <tbody>
+           {% for c in comments %}
+            <tr>
+                <td>{{c.comment}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+ <div>
+    {{ include('comment/_form.html.twig') }}
+    </div>
+    </div>
+</div>
+
+
+<div class="rightpart">
+<h5>Suivi par:</h5>
+   
+    <ul>
+        <li>{{doctor.firstname}} {{doctor.lastname}}</li>
+        <li>Michel Soignetout</li>
+        <li>Christian Cabrol</li>       
+    </ul>
+</div>
+</div>
+
 {% endblock %}

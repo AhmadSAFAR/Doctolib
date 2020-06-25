@@ -1,0 +1,84 @@
+.pimg img{
+    width: 20leftpart0px;
+    height: 150px;
+    padding-left: 10px;
+ 
+}
+.commentaire {
+    height: 400px;
+}
+
+.leftpart {
+    margin-top: 100px;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    width: 20%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    background-color: lightgray;
+}
+.leftpart h6{
+    color: #1599E3;
+    text-align: center;
+}
+
+.leftpart h5{
+    color:black;
+    padding-left: 2%;
+}
+.leftpart img {
+    padding-top: 2%;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+.chat {
+    margin-top: 10px;
+    width: 50%;
+    height: 100%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    justify-content: center;
+    text-align: center;
+}
+
+.rightpart {
+    margin-top: 200px;
+    width: 30%;
+    height: 100%;
+    padding-left: 10%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+  
+}
+.rightpart h5{
+    color:black;
+}
+
+.bigdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    padding-top: 75px;
+    border-style: solid;
+    border-color: black;
+    width: 110%;
+    text-align: center;
+}
+
+.description td{
+    text-align: left;
+}
+
+
+.titrepagepatient {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 1%;
+}

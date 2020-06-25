@@ -7,71 +7,38 @@
     </head>
     <body>
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<nav class="navbar navbar-expand-lg navbar-dark static-top">
   <div class="container">
     <a class="navbar-brand" href="#">
-          <img src="{{ asset('build/doctolib.jpg') }}" alt="logodoctolib"/>
+          <img class="doctolib" src="{{ asset('build/doctolib.jpg') }}" alt="logodoctolib"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
+            <a class="nav-link" href="#">
             </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#">Retour vers Doctolib</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<div class="messageaccueil">
+        <h4>Vous n'êtes pas seul! Communiquez en temps réel sur votre santé à votre corps médical.</h4>
+</div>
         {% block body %}
+
         {% endblock %}
-    <!-- Footer -->
-    <footer class="page-footer font-small unique-color-dark">
-    <div style="background-color: #6351ce;">
-        <div class="container">
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0">Get connected with us on social networks!</h6>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
-            <!-- Facebook -->
-            <a class="fb-ic">
-                <i class="fab fa-facebook-f white-text mr-4"> </i>
-            </a>
-            <!-- Twitter -->
-            <a class="tw-ic">
-                <i class="fab fa-twitter white-text mr-4"> </i>
-            </a>
-            <!-- Google +-->
-            <a class="gplus-ic">
-                <i class="fab fa-google-plus-g white-text mr-4"> </i>
-            </a>
-            <!--Linkedin -->
-            <a class="li-ic">
-                <i class="fab fa-linkedin-in white-text mr-4"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic">
-                <i class="fab fa-instagram white-text"> </i>
-            </a>
-            </div>
-            <!-- Grid column -->
+        <div class="messagebesoinaide">
+        <h4>Une question ? Besoin d'aide ?</h4> <h6>Consultez notre aide en ligne ou contactez-nous</h6>
         </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+    <div>
         <!-- Grid row-->
         </div>
     </div>
@@ -82,30 +49,41 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase font-weight-bold">Company name</h6>
+            <h6 class="text-uppercase font-weight-bold">À propos de Doctolib</h6>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-            consectetur
-            adipisicing elit.</p>
+            <p>
+            <a href="#!">Vous êtes professionnel de santé ?</a>
+            <a href="#!">Consultation vidéo - Téléconsultation</a>
+            <a href="#!">Nos offres de remplacement</a>
+            <a href="#!">À propos de nous</a>
+            <a href="#!">Nos Investisseurs</a>
+            </p>
         </div>
         <!-- Grid column -->
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <h6 class="text-uppercase font-weight-bold">Trouvez votre spécialiste</h6>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
             <p>
-            <a href="#!">MDBootstrap</a>
+            <a href="#!">Chirurgien-dentiste</a>
+            <a href="#!">Médecin généraliste</a>
+            <a href="#!">Pédiatre</a>
+            <a href="#!">Gynécologue médical et obstétrique</a>
+            <a href="#!">Dermatologue et vénérologue</a>
             </p>
         </div>
         <!-- Grid column -->
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <h6 class="text-uppercase font-weight-bold">Recherches fréquentes</h6>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
             <p>
-            <a href="#!">Your Account</a>
+            <a href="#!">Ostéopathe</a>
+            <a href="#!">Gynécologue médical et obstétrique</a>
+            <a href="#!">Dermatologue et vénérologue</a>
+            <a href="#!">Pédicure-podologue</a>
         </div>
         <!-- Grid column -->
         <!-- Grid column -->
@@ -113,8 +91,10 @@
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Contact</h6>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+             <a href="#!">support@doctolib.zendesk.com</a>
             <p>
-            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <a href="#!">01 83 35 53 58</a>
+           
         </div>
         <!-- Grid column -->
         </div>

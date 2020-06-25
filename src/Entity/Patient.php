@@ -3,6 +3,9 @@
 namespace App\Entity;
 
 use App\Repository\PatientRepository;
+use App\Form\CommentType;
+use App\Repository\CommentRepository;
+use App\Entity\Comment;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -74,9 +77,15 @@ class Patient
      */
     private $doctor;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="patient")
+     */
+    private $comments;
+
     public function __construct()
     {
         $this->doctor = new ArrayCollection();
+        $this->comments = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -225,6 +234,37 @@ class Patient
     {
         if ($this->doctor->contains($doctor)) {
             $this->doctor->removeElement($doctor);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Comment[]
+     */
+    public function getComments(): Collection
+    {
+        return $this->comments;
+    }
+
+    public function addComment(Comment $comment): self
+    {
+        if (!$this->comments->contains($comment)) {
+            $this->comments[] = $comment;
+            $comment->setPatient($this);
+        }
+
+        return $this;
+    }
+
+    public function removeComment(Comment $comment): self
+    {
+        if ($this->comments->contains($comment)) {
+            $this->comments->removeElement($comment);
+            // set the owning side to null (unless already changed)
+            if ($comment->getPatient() === $this) {
+                $comment->setPatient(null);
+            }
         }
 
         return $this;

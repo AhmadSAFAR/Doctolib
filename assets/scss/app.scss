@@ -1,0 +1,86 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import "patient.scss";
+@import "doctor.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+$primary:#1599E3!important ;
+$secondary: #eef2f6!important;
+$third:#1599E3!important ;
+
+.doctolib {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    background-color: #1599E3!important;
+    margin-bottom: 20px;
+}
+
+nav{
+    height: 150px;
+    font-family: 'Roboto';
+}
+
+h1, h5, li, h6, h4{
+    font-family: 'Montserrat';
+}
+
+p{
+    font-family: 'Roboto';
+}
+
+td{
+    font-family: 'Roboto';
+    line-height: 40px;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #1599E3!important;
+    height: 100px;
+}
+
+footer {
+    padding-top: 20px;
+    background-color: #eef2f6!important;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+.body {
+    background-color: white;
+}
+
+.messagebesoinaide {
+    background-color: #435f71;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.messagebesoinaide h4{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.messagebesoinaide h6{
+    color: #fdc400;
+}
+
+.messageaccueil {
+    background-color: #435f71;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.messageaccueil h4 {
+    color: #fdc400;
+    text-align: center;
+    justify-content: center;
+}
