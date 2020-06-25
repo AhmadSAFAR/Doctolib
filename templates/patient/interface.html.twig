@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 {% block title %}Espace Patient{% endblock %}
 {% block body %}
+
 <h1 class="titrepagepatient">Espace patient {{ patient.firstname }} {{ patient.lastname }}</h1>
+
 <div class="bigdiv">
 
 <div class="leftpart">
@@ -18,11 +20,11 @@
         <li>Traiment XY pris en 2019</li>
         <li>Allergique à l'amoxicilline</li>
         <li>Atteint de la maladie de Lyme</li>
+
         <li href>Ajouter un traitement essayé</li>
     </ul>
         </div>
 </div>
-
 <div class="chat">
     <hr>
     <p>{{ patient.email }}</p>

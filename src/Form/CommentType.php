@@ -17,7 +17,7 @@ class CommentType extends AbstractType
     {
         $builder
             ->add('comment', TextType::class, ['label' => 'Message'])
-          
+   
         ;
     }
 
