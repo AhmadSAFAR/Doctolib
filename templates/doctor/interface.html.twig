@@ -1,10 +1,14 @@
 {% extends 'base.html.twig' %}
 {% block title %}Espace Médecin{% endblock %}
 {% block body %}
+
 <h1 class="titrepagepatient">Espace Médecin {{ doctor.firstname }} {{ doctor.lastname }}</h1>
+<div class="messageaccueil">
+    <h4>Communiquer avec vos patients à tout moment sans prise de rendez-vous</h4>
+</div>
 <div class="bigdiv">
 
-<div class="leftpart">
+<div class="leftpartd">
         <div class="pimg">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="profil image" />
         </div>
@@ -18,26 +22,21 @@
     </ul>
         </div>
 </div>
-
-<div class="chat">
-    <hr>
-<div class="description">
-<h1>hi</h1>
-</div>
- <div>
-    </div>
-    </div>
-</div>
-
-
-<div class="rightpart">
-<h5>Suivi par:</h5>
-   
+<div class="secandpart">
+<h5>Vous suivez les patients :</h5>
     <ul>
-        <li>{{doctor.firstname}} {{doctor.lastname}}</li>
-        <li>Michel Soignetout</li>
-        <li>Christian Cabrol</li>       
+        <li><a href="/patient/1">{{patient.firstname}} {{patient.lastname}}</li></a>
+        <li><a href="/patient/2">Benjamin Tourneur</a></li>
+        <li><a href="/patient/2">Mario Sanchez</a></li>
+        <li><a href="/patient/2">Laura Chastain</a></li>
+        <li><a href="/patient/2">Angelina Lorenz</a></li>
+        <li><a href="/patient/2">Hans Muller</a></li> 
+        <li><a href="/patient/2">Pablo Castro</a></li>
+        <li><a href="/patient/2">Vladimir Poliakov</a></li>
+        <li><a href="/patient/2">Cory Langdon</a></li>
+
     </ul>
+    </div>
 </div>
 </div>
 

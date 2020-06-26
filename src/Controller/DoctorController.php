@@ -15,11 +15,11 @@ class DoctorController extends AbstractController
     /**
      * @Route("/{id}", name="doctor_interface", methods={"GET","POST"})
      */
-    public function interface(Doctor $doctor, PatientRepository $patient)
+    public function interface(Doctor $doctor, Patient $patient)
     {
        return $this->render('doctor/interface.html.twig', [
            'doctor'=>$doctor,
-           'patients'=>$patient,
+           'patient'=>$patient,
        ]);
     }
 }   

@@ -1,15 +1,49 @@
-.firstpart{
-    width: 30%;
-    height: 250px;
+.leftpartd {
+    margin-top: 2%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    width: 20%;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    background-color: lightgray;
+}
+.leftpartd h6{
+    color: #1599E3;
+    text-align: center;
+}
+
+.leftpartd h5{
+    color:black;
+    padding-left: 2%;
+}
+.leftpartd img {
+    padding-top: 2%;
+    border-radius: 20px;
+    margin-left: 29%;
 }
 
 .secandpart{
+    margin-top: 2%;
     width: 50%;
-    padding-left: 5%;
-    border: solid;
+    height: 100%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    justify-content: center;
+    text-align: center;
 }
 
 .bigdivm{
     display:flex;
     justify-content: start;
+}
+
+ul li {
+    list-style: none;
+}
+
+.description{
+    text-align: center;
 }

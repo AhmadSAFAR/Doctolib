@@ -3,9 +3,10 @@
 {% block body %}
 
 <h1 class="titrepagepatient">Espace patient {{ patient.firstname }} {{ patient.lastname }}</h1>
-
+<div class="messageaccueil">
+        <h4>Vous n'êtes pas seul! Communiquez en temps réel sur votre santé à votre corps médical.</h4>
+</div>
 <div class="bigdiv">
-
 <div class="leftpart">
         <div class="pimg">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="profil image" />
@@ -27,7 +28,7 @@
 </div>
 <div class="chat">
     <hr>
-    <p>{{ patient.email }}</p>
+    <p>{{ patient.description }}</p>
 <div class="description">
     <h5>Discussion sur l'évolution de mon état de santé</h5>
         <div>  
@@ -37,6 +38,7 @@
             <tr>
                 <td>{{c.comment}}</td>
             </tr>
+            
         {% endfor %}
         </tbody>
     </table>

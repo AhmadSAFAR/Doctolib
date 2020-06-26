@@ -8,8 +8,8 @@
     <body>
     <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark static-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://www.doctolib.fr">
           <img class="doctolib" src="{{ asset('build/doctolib.jpg') }}" alt="logodoctolib"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,15 +21,13 @@
             </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Retour vers Doctolib</a>
+          <a class="nav-link" href="https://www.doctolib.fr">Retour vers Doctolib</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="messageaccueil">
-        <h4>Vous n'êtes pas seul! Communiquez en temps réel sur votre santé à votre corps médical.</h4>
-</div>
+
         {% block body %}
         {% endblock %}
         <div class="messagebesoinaide">
